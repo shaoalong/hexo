@@ -6,19 +6,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <title>测试 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="主题设置把主题包解压到theme目录下可随意改名字如yilia，在站点config.yml找到theme并设置为该主题文件的名字yilia即可
-头像设置修改图片路径主题config.yml找到avatar设置为图片的地址，可为链接可为本地路径：如：avatar： /uploads/avatar.jpg –需要在该主题的source目录下新建uploads文件夹    avatar：http：xxx">
+  <meta name="description" content="github仓库创建和普通仓库创建一样但仓库名必须为本人github的id。如我的id是”shaoalong”，所以仓库名为”shaoalong.github.io”。
+新建秘钥*. 1 git bash输入1$ ssh-keygen -t rsa -C &amp;quot;youremail@example.com&amp;quot;
+其中”youremail@example.com”是本人的邮箱可以在用户主目">
 <meta property="og:type" content="article">
 <meta property="og:title" content="测试">
 <meta property="og:url" content="http://yoursite.com/2016/10/20/测试/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="主题设置把主题包解压到theme目录下可随意改名字如yilia，在站点config.yml找到theme并设置为该主题文件的名字yilia即可
-头像设置修改图片路径主题config.yml找到avatar设置为图片的地址，可为链接可为本地路径：如：avatar： /uploads/avatar.jpg –需要在该主题的source目录下新建uploads文件夹    avatar：http：xxx">
-<meta property="og:updated_time" content="2016-10-20T03:28:29.684Z">
+<meta property="og:description" content="github仓库创建和普通仓库创建一样但仓库名必须为本人github的id。如我的id是”shaoalong”，所以仓库名为”shaoalong.github.io”。
+新建秘钥*. 1 git bash输入1$ ssh-keygen -t rsa -C &amp;quot;youremail@example.com&amp;quot;
+其中”youremail@example.com”是本人的邮箱可以在用户主目">
+<meta property="og:updated_time" content="2016-10-20T03:33:39.085Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="测试">
-<meta name="twitter:description" content="主题设置把主题包解压到theme目录下可随意改名字如yilia，在站点config.yml找到theme并设置为该主题文件的名字yilia即可
-头像设置修改图片路径主题config.yml找到avatar设置为图片的地址，可为链接可为本地路径：如：avatar： /uploads/avatar.jpg –需要在该主题的source目录下新建uploads文件夹    avatar：http：xxx">
+<meta name="twitter:description" content="github仓库创建和普通仓库创建一样但仓库名必须为本人github的id。如我的id是”shaoalong”，所以仓库名为”shaoalong.github.io”。
+新建秘钥*. 1 git bash输入1$ ssh-keygen -t rsa -C &amp;quot;youremail@example.com&amp;quot;
+其中”youremail@example.com”是本人的邮箱可以在用户主目">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -160,20 +163,19 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="主题设置"><a href="#主题设置" class="headerlink" title="主题设置"></a>主题设置</h3><p>把主题包解压到theme目录下可随意改名字如yilia，在站点config.yml找到theme并设置为该主题文件的名字yilia即可</p>
-<h3 id="头像设置"><a href="#头像设置" class="headerlink" title="头像设置"></a>头像设置</h3><h4 id="修改图片路径"><a href="#修改图片路径" class="headerlink" title="修改图片路径"></a>修改图片路径</h4><p>主题config.yml找到avatar设置为图片的地址，可为链接可为本地路径：<br>如：avatar： /uploads/avatar.jpg –需要在该主题的source目录下新建uploads文件夹<br>    avatar：http：xxxxxxxx.jpg</p>
-<h4 id="修改文件"><a href="#修改文件" class="headerlink" title="修改文件"></a>修改文件</h4><p>设置好路径到该主题文件的layout–partial–left-col.ejs文件修改<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;a href=&quot;/&quot; class=&quot;profilepic&quot;&gt;</div><div class="line">	&lt;% if (theme.animate)&#123; %&gt;</div><div class="line">	&lt;img src=&quot;&lt;%=theme.avatar%&gt;&quot; class=&quot;js-avatar&quot;&gt;</div><div class="line">	&lt;%&#125;else&#123;%&gt;</div><div class="line">	&lt;img src=&quot;&lt;%=theme.avatar%&gt;&quot; class=&quot;js-avatar&quot; style=&quot;width: 100%;height: 100%;opacity: 1;&quot;&gt;</div><div class="line">	&lt;%&#125;%&gt;</div><div class="line">&lt;/a&gt;</div></pre></td></tr></table></figure></p>
-<p>改为<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;a href=&quot;/&quot; class=&quot;profilepic&quot;&gt;</div><div class="line">	&lt;% if (theme.animate)&#123; %&gt;</div><div class="line">	&lt;img src=&quot;&lt;%=theme.avatar%&gt;&quot; class=&quot;js-avatar show&quot;&gt;</div><div class="line">	&lt;%&#125;else&#123;%&gt;</div><div class="line">	&lt;img src=&quot;&lt;%=theme.avatar%&gt;&quot; class=&quot;js-avatar show&quot; style=&quot;width: 100%;height: 100%;opacity: 1;&quot;&gt;</div><div class="line">	&lt;%&#125;%&gt;</div><div class="line">&lt;/a&gt;</div></pre></td></tr></table></figure></p>
-<p>即可</p>
-<h3 id="hexo关联github"><a href="#hexo关联github" class="headerlink" title="hexo关联github"></a>hexo关联github</h3><p>找到站点config.yml，在文件的最下面增加形如内容</p>
+        <h2 id="github仓库创建"><a href="#github仓库创建" class="headerlink" title="github仓库创建"></a>github仓库创建</h2><p>和普通仓库创建一样但仓库名必须为本人github的id。如我的id是”shaoalong”，<br>所以仓库名为”shaoalong.github.io”。</p>
+<h2 id="新建秘钥"><a href="#新建秘钥" class="headerlink" title="新建秘钥"></a>新建秘钥</h2><p>*. 1 git bash输入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssh-keygen -t rsa -C &quot;youremail@example.com&quot;</div></pre></td></tr></table></figure></p>
+<p>其中”youremail@example.com”是本人的邮箱<br>可以在用户主目录里找到.ssh目录，里面有id_rsa和id_rsa.pub两个文件。这两个就是SSH Key的秘钥对，id_rsa是私钥，不能泄露出去，id_rsa.pub是公钥，可以放心地告诉任何人。<br>*. 2 登陆GitHub，打开“Account settings”，“SSH Keys”页面，然后点“Add SSH Key”，填上任意Title，在Key文本框里粘贴id_rsa.pub文件的内容。</p>
+<h2 id="hexo关联github"><a href="#hexo关联github" class="headerlink" title="hexo关联github"></a>hexo关联github</h2><p>找到站点config.yml，在文件的最下面增加形如内容</p>
 <blockquote>
 <p>deploy:<br>      type: git<br>      repository: git@github.com:shaoalong/shaoalong.github.io.git<br>      branch: master</p>
 </blockquote>
 <p>其中：git@github.com:shaoalong/shaoalong.github.io.git 是本人的git仓库</p>
-<h3 id="github仓库创建"><a href="#github仓库创建" class="headerlink" title="github仓库创建"></a>github仓库创建</h3><p>和普通仓库创建一样但仓库名必须为本人github的id。如我的id是”shaoalong”，<br>所以仓库名为”shaoalong.github.io”。</p>
-<h3 id="新建秘钥"><a href="#新建秘钥" class="headerlink" title="新建秘钥"></a>新建秘钥</h3><p>*.1 git bash输入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssh-keygen -t rsa -C &quot;youremail@example.com&quot;</div></pre></td></tr></table></figure></p>
-<p>可以在用户主目录里找到.ssh目录，里面有id_rsa和id_rsa.pub两个文件。这两个就是SSH Key的秘钥对，id_rsa是私钥，不能泄露出去，id_rsa.pub是公钥，可以放心地告诉任何人。<br>*.2 登陆GitHub，打开“Account settings”，“SSH Keys”页面：</p>
-<p>然后，点“Add SSH Key”，填上任意Title，在Key文本框里粘贴id_rsa.pub文件的内容：</p>
+<h2 id="主题设置"><a href="#主题设置" class="headerlink" title="主题设置"></a>主题设置</h2><p>把主题包解压到theme目录下可随意改名字如yilia，在站点config.yml找到theme并设置为该主题文件的名字yilia即可</p>
+<h2 id="头像设置"><a href="#头像设置" class="headerlink" title="头像设置"></a>头像设置</h2><p><em>. 1 修改图片路径<br>主题config.yml找到avatar设置为图片的地址，可为链接可为本地路径：<br>如：avatar： /uploads/avatar.jpg –需要在该主题的source目录下新建uploads文件夹<br>    avatar：http：xxxxxxxx.jpg
+</em>. 2 修改文件<br>设置好路径到该主题文件的layout–partial–left-col.ejs文件修改<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;a href=&quot;/&quot; class=&quot;profilepic&quot;&gt;</div><div class="line">	&lt;% if (theme.animate)&#123; %&gt;</div><div class="line">	&lt;img src=&quot;&lt;%=theme.avatar%&gt;&quot; class=&quot;js-avatar&quot;&gt;</div><div class="line">	&lt;%&#125;else&#123;%&gt;</div><div class="line">	&lt;img src=&quot;&lt;%=theme.avatar%&gt;&quot; class=&quot;js-avatar&quot; style=&quot;width: 100%;height: 100%;opacity: 1;&quot;&gt;</div><div class="line">	&lt;%&#125;%&gt;</div><div class="line">&lt;/a&gt;</div></pre></td></tr></table></figure></p>
+<p>改为<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;a href=&quot;/&quot; class=&quot;profilepic&quot;&gt;</div><div class="line">	&lt;% if (theme.animate)&#123; %&gt;</div><div class="line">	&lt;img src=&quot;&lt;%=theme.avatar%&gt;&quot; class=&quot;js-avatar show&quot;&gt;</div><div class="line">	&lt;%&#125;else&#123;%&gt;</div><div class="line">	&lt;img src=&quot;&lt;%=theme.avatar%&gt;&quot; class=&quot;js-avatar show&quot; style=&quot;width: 100%;height: 100%;opacity: 1;&quot;&gt;</div><div class="line">	&lt;%&#125;%&gt;</div><div class="line">&lt;/a&gt;</div></pre></td></tr></table></figure></p>
+<p>即可</p>
 
       
     </div>
