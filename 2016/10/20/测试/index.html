@@ -7,18 +7,18 @@
   <title>测试 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="主题设置把主题包解压到theme目录下可随意改名字如yilia，在站点config.yml找到theme并设置为该主题文件的名字yilia即可
-头像设置主题config.yml找到avatar设置为图片的地址，可为链接可为本地路径：如：avatar： /uploads/avatar.jpg –需要在该主题的source目录下新建uploads文件夹    avatar：http：xxxxxxxx.">
+头像设置####修改图片路径主题config.yml找到avatar设置为图片的地址，可为链接可为本地路径：如：avatar： /uploads/avatar.jpg –需要在该主题的source目录下新建uploads文件夹    avatar：http">
 <meta property="og:type" content="article">
 <meta property="og:title" content="测试">
 <meta property="og:url" content="http://yoursite.com/2016/10/20/测试/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="主题设置把主题包解压到theme目录下可随意改名字如yilia，在站点config.yml找到theme并设置为该主题文件的名字yilia即可
-头像设置主题config.yml找到avatar设置为图片的地址，可为链接可为本地路径：如：avatar： /uploads/avatar.jpg –需要在该主题的source目录下新建uploads文件夹    avatar：http：xxxxxxxx.">
-<meta property="og:updated_time" content="2016-10-20T03:10:06.740Z">
+头像设置####修改图片路径主题config.yml找到avatar设置为图片的地址，可为链接可为本地路径：如：avatar： /uploads/avatar.jpg –需要在该主题的source目录下新建uploads文件夹    avatar：http">
+<meta property="og:updated_time" content="2016-10-20T03:12:08.821Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="测试">
 <meta name="twitter:description" content="主题设置把主题包解压到theme目录下可随意改名字如yilia，在站点config.yml找到theme并设置为该主题文件的名字yilia即可
-头像设置主题config.yml找到avatar设置为图片的地址，可为链接可为本地路径：如：avatar： /uploads/avatar.jpg –需要在该主题的source目录下新建uploads文件夹    avatar：http：xxxxxxxx.">
+头像设置####修改图片路径主题config.yml找到avatar设置为图片的地址，可为链接可为本地路径：如：avatar： /uploads/avatar.jpg –需要在该主题的source目录下新建uploads文件夹    avatar：http">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -160,8 +160,9 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="主题设置"><a href="#主题设置" class="headerlink" title="主题设置"></a>主题设置</h4><p>把主题包解压到theme目录下可随意改名字如yilia，在站点config.yml找到theme并设置为该主题文件的名字yilia即可</p>
-<h4 id="头像设置"><a href="#头像设置" class="headerlink" title="头像设置"></a>头像设置</h4><p>主题config.yml找到avatar设置为图片的地址，可为链接可为本地路径：<br>如：avatar： /uploads/avatar.jpg –需要在该主题的source目录下新建uploads文件夹<br>    avatar：http：xxxxxxxx.jpg<br>设置好路径到该主题文件的layout–partial–left-col.ejs文件修改<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;a href=&quot;/&quot; class=&quot;profilepic&quot;&gt;</div><div class="line">			&lt;% if (theme.animate)&#123; %&gt;</div><div class="line">			&lt;img src=&quot;&lt;%=theme.avatar%&gt;&quot; class=&quot;js-avatar&quot;&gt;</div><div class="line">			&lt;%&#125;else&#123;%&gt;</div><div class="line">			&lt;img src=&quot;&lt;%=theme.avatar%&gt;&quot; class=&quot;js-avatar&quot; style=&quot;width: 100%;height: 100%;opacity: 1;&quot;&gt;</div><div class="line">			&lt;%&#125;%&gt;</div><div class="line">&lt;/a&gt;</div></pre></td></tr></table></figure></p>
+        <h3 id="主题设置"><a href="#主题设置" class="headerlink" title="主题设置"></a>主题设置</h3><p>把主题包解压到theme目录下可随意改名字如yilia，在站点config.yml找到theme并设置为该主题文件的名字yilia即可</p>
+<h3 id="头像设置"><a href="#头像设置" class="headerlink" title="头像设置"></a>头像设置</h3><p>####修改图片路径<br>主题config.yml找到avatar设置为图片的地址，可为链接可为本地路径：<br>如：avatar： /uploads/avatar.jpg –需要在该主题的source目录下新建uploads文件夹<br>    avatar：http：xxxxxxxx.jpg</p>
+<h4 id="修改文件"><a href="#修改文件" class="headerlink" title="修改文件"></a>修改文件</h4><p>设置好路径到该主题文件的layout–partial–left-col.ejs文件修改<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;a href=&quot;/&quot; class=&quot;profilepic&quot;&gt;</div><div class="line">			&lt;% if (theme.animate)&#123; %&gt;</div><div class="line">			&lt;img src=&quot;&lt;%=theme.avatar%&gt;&quot; class=&quot;js-avatar&quot;&gt;</div><div class="line">			&lt;%&#125;else&#123;%&gt;</div><div class="line">			&lt;img src=&quot;&lt;%=theme.avatar%&gt;&quot; class=&quot;js-avatar&quot; style=&quot;width: 100%;height: 100%;opacity: 1;&quot;&gt;</div><div class="line">			&lt;%&#125;%&gt;</div><div class="line">&lt;/a&gt;</div></pre></td></tr></table></figure></p>
 <p>改为<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;a href=&quot;/&quot; class=&quot;profilepic&quot;&gt;</div><div class="line">			&lt;% if (theme.animate)&#123; %&gt;</div><div class="line">			&lt;img src=&quot;&lt;%=theme.avatar%&gt;&quot; class=&quot;js-avatar show&quot;&gt;</div><div class="line">			&lt;%&#125;else&#123;%&gt;</div><div class="line">			&lt;img src=&quot;&lt;%=theme.avatar%&gt;&quot; class=&quot;js-avatar show&quot; style=&quot;width: 100%;height: 100%;opacity: 1;&quot;&gt;</div><div class="line">			&lt;%&#125;%&gt;</div><div class="line">&lt;/a&gt;</div></pre></td></tr></table></figure></p>
 <p>即可</p>
 
